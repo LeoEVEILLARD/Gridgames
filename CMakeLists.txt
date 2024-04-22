@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 3.10)
+project(GridGames LANGUAGES CXX)
+find_package(SFML 2.5 COMPONENTS graphics audio REQUIRED)
+add_executable(gridGames gridGames.cpp)
+target_link_libraries(gridGames PRIVATE sfml-graphics)
+target_compile_features(gridGames PRIVATE cxx_std_17)
